@@ -33,8 +33,8 @@ class ecocash
 public function initialize_transaction($amount,$subscriber)
 {
 	
-$request_url = "https://api.ansifact.co.zw/ecocash_check";
-$post_url = "https://api.ansifact.co.zw/ecocash_api";
+$request_url = "https://paycash.co.zw/check";
+$post_url = "https://paycash.co.zw/charge";
 $merchant_key ="0854190324-024ANSI1103914739131779";
 $return_url ="http://localhost/ansifact/partners/";
 
@@ -60,8 +60,8 @@ return $response;
 
 public function Check_transaction_status($hashcode,$subscriber)
 {
-$request_url = "https://api.ansifact.co.zw/ecocash_check";
-$post_url = "https://api.ansifact.co.zw/ecocash_api";
+$request_url = "https://paycash.co.zw/check";
+$post_url = "https://paycash.co.zw/charge";
 $merchant_key="0854190324-024ANSI1103914739131779";
 $return_url ="http://localhost/ansifact/partners/";
 
